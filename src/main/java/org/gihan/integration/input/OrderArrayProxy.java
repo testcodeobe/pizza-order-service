@@ -143,7 +143,7 @@ public class OrderArrayProxy extends CodeobeListener {
     private static List<String> convert(String reqString) {
         List<String> outArray = new ArrayList<String>();
         try {
-            String template = "{\"name\":\"%s\", \"age\":\"%s\"}";
+            String template = "{\"name\":\"%s\", \"quantity\":\"%s\"}";
             String[] messages = reqString.split("\n");
             if (messages.length > 0) {
                 for (String m : messages) {
